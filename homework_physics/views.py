@@ -34,7 +34,7 @@ def display_wave(length):
 
         if end_flag:
             break
-        for i in range(high, 0, -1):
+        for i in range(high+1, 0, -1):
             s += "/" * (i-1) + "/\n"
             c+=1
             if c >= length:
@@ -44,12 +44,12 @@ def display_wave(length):
     return s
     
  
-def calc_pm(angle, velocity, g):
+def calc_pm(angle, v, g):
 
-    max_high = (velocity**2 + math.sin(math.radians(angle))**2)/2/g
-    max_high_time = velocity * math.sin(math.radians(angle)) / g
-    land = 2 * velocity * math.sin(math.radians(angle)) / g
-    R = 2 * (velocity)**2 * math.sin(math.radians(angle)) * math.cos(math.radians(angle)) / g
+    max_high = (v**2 + math.sin(math.radians(angle))**2)/2/g
+    max_high_time = v * math.sin(math.radians(angle)) / g
+    land = 2 * v * math.sin(math.radians(angle)) / g
+    R = 2 * (v)**2 * math.sin(math.radians(angle)) * math.cos(math.radians(angle)) / g
 
     r = f"仰角: {angle}度\n初速度: {veloctiy}m/s\n加速度: {g}m/s2\n計算結果如下\n\n最高點高度: {max_high}m\n最高點時間: {max_hgh_time}\n著地時間: {land}s\n射程: {R}\n"
     return r
