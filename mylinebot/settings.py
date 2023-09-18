@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-syvk+&hhh7580(b&)w0u6#k!wv-+=p7wzj+(352^eqrbdm3aja
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0548-112-104-118-32.ngrok-free.app']
+ALLOWED_HOSTS = ['']
 
 # LineBot
 LINE_CHANNEL_ACCESS_TOKEN = '9YH2KFZZ+759VHYviKYfk5oZrIa137pEqVuFKgSE/7T+B19MvT59+vzLok7kswJlg3pUu4ORtsm6IntnTkU4nff4gcQpMij4NovwNTonGmCqFd5rSRnkAe0dyiRULZ5QQK/IlrOO1Lue6An7KNXAwwdB04t89/1O/w1cDnyilFU='
