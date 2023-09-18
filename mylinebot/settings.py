@@ -42,8 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'homework_physics.apps.HomeworkPhysicsConfig',
-    'render.apps.RenderConfig'
+    'homework_physics.apps.HomeworkPhysicsConfig'
 ]
 
 MIDDLEWARE = [
