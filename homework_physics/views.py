@@ -46,12 +46,14 @@ def display_wave(length):
  
 def calc_pm(angle, v, g):
 
-    max_high = (v**2 + math.sin(math.radians(angle))**2)/2/g
-    max_high_time = v * math.sin(math.radians(angle)) / g
-    land = 2 * v * math.sin(math.radians(angle)) / g
-    R = 2 * (v)**2 * math.sin(math.radians(angle)) * math.cos(math.radians(angle)) / g
+    max_high = round( (v**2 + math.sin(math.radians(angle))**2)/2/g , 1 )
+    max_high_time = round( v * math.sin(math.radians(angle)) / g, 1 )
+    land = round( 2 * v * math.sin(math.radians(angle)) / g , 1)
+    R = round( 2 * (v)**2 * math.sin(math.radians(angle)) * math.cos(math.radians(angle)) / g, 1)
 
-    r = f"仰角: {angle}度\n初速度: {v}m/s\n加速度: {g}m/s2\n計算結果如下\n\n最高點高度: {max_high}m\n最高點時間: {max_high_time}\n著地時間: {land}s\n射程: {R}\n"
+
+
+    r = f"仰角: {angle}度\n初速度: {v}m/s\n加速度: {g}m/s2\n計算結果如下\n\n最高點高度: {max_high}m\n最高點時間: {max_high_time}s\n著地時間: {land}s\n射程: {R}m\n"
     return r
 
 def message_response(text):
