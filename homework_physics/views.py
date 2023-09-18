@@ -51,7 +51,7 @@ def calc_pm(angle, v, g):
     land = 2 * v * math.sin(math.radians(angle)) / g
     R = 2 * (v)**2 * math.sin(math.radians(angle)) * math.cos(math.radians(angle)) / g
 
-    r = f"仰角: {angle}度\n初速度: {veloctiy}m/s\n加速度: {g}m/s2\n計算結果如下\n\n最高點高度: {max_high}m\n最高點時間: {max_hgh_time}\n著地時間: {land}s\n射程: {R}\n"
+    r = f"仰角: {angle}度\n初速度: {v}m/s\n加速度: {g}m/s2\n計算結果如下\n\n最高點高度: {max_high}m\n最高點時間: {max_hgh_time}\n著地時間: {land}s\n射程: {R}\n"
     return r
 
 def message_response(text):
